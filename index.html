@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FIND MEALS</title>
+    
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+
+  <div class="container">
+      <div class="meal-wrapper">
+          <div class="meal-search">
+             <h2>Find recepies for your MEALS
+            </h2>
+
+            <blockquote>REAL FOOD IS NOT MADE IN REASTAURANTS , ITS MADE AT HOME<br>
+            <cite>- Shashwat tiwari</cite>
+            </blockquote>
+
+            <div class="meal-search-box">
+                <input type="text" class="search-control"
+                placeholder="Enter an ingredient " id="search-input" style="
+                text-align: center">
+                <button type="submit" class="search-btn btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button> 
+            </div>
+        <div class="meal-result">
+            <h2 class="title">Your search results:</h2>
+            <div id="meal">
+                <!-- meal-item -->
+                <div class="meal-item">
+                    <div class="meal-img">
+                        <img src="food.jpg" alt="food" style="height: 200px;
+                        width: 300px;
+                        object-fit: cover;">
+                    </div>
+                    <div class="meal-name">
+                        <h3>Chowmien</h3>
+                        <a href="#" class="recipe-btn">Get Recipies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>    
+</html>
+
