@@ -32,5 +32,7 @@ function getMeallist(){
         }
 
         mealList.innerHTML = html;
+        document.getElementById("mealListHeader").style.display = "block"
     });
+
 }

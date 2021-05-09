@@ -48,14 +48,14 @@ body{
     text-align: center;
 }
 .Meal-search{
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 .Meal-search cite{
     font-size: 1rem;
 
 }
 .Meal-search-box{
-    margin: 5rem ;
+    margin: 2rem ;
     align-items: stretch;
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ body{
 
 }
 .Meal-result{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 #meal{
     margin: 2.4rem;
