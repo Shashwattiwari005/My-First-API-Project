@@ -236,19 +236,19 @@ body{
     opacity: 0.8;
 }
 
-
-
-
-/* Media queries*/
-@media screen and (min-width: 600px){
-    .Meal-search-box{
-        width: 540px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+/*  */
+.notfound{
+    grid-template-columns: 1fr!important;
+    color: var(--tenne-twany);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+    justify-content: center;
 }
 
-@media screen and (min-width: 768px){
+/* Media queries*/
+
+@media screen and (min-width: 600px){
     #meal{
         display: grid;
         grid-template-columns: repeat(2,1fr);
