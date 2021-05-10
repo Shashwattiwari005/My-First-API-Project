@@ -17,10 +17,10 @@ function getMeallist(){
         if(data.meals){
             data.meals.forEach(meal => {
                 html += `
-                    <div class="Meal-item" data-id="${meal.idMeal}" style="border-radius: 2rem; overflow: hidden;">
+                    <div class="Meal-item" data-id="${meal.idMeal}" style="border-radius: 2rem; overflow: hidden;background-color: white;">
                         <div class="meal-img" >
                             <img src="${meal.strMealThumb}" alt="food" style="height: 300px;
-                            width: 400px;">
+                            width: 405px;">
                         </div>    
                         <div class="meal-name">
                             <h3>${meal.strMeal}</h3>
@@ -29,10 +29,13 @@ function getMeallist(){
                     </div>   
                 `;
             });
+        } else{
+            html="Sorry,we didn't find any meal!!!";
         }
 
         mealList.innerHTML = html;
         document.getElementById("mealListHeader").style.display = "block"
+        
     });
 
 }
