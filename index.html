@@ -1,95 +1,126 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: antiquewhite">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>FIND MEALS</title>
-    
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    
-    
-    <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" style="background-color: antiquewhite">
+      <div
+        class="Meal-wrapper"
+        style="padding: 0; background-color: antiquewhite"
+      >
+        <div class="Meal-search" style="margin: 0">
+          <h2>
+            <b
+              ><p
+                style="
+                  font-size: 75px;
+                  font-family: Algerian;
+                  color: sienna;
+                  padding-top: 3rem;
+                  padding-bottom: 2rem;
+                  text-decoration: underline;
+                "
+              >
+                FIND RECIPIES FOR YOUR MEALS
+              </p></b
+            >
+          </h2>
 
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 1rem;
+              background: transparent;
+            "
+          >
+            <blockquote style="font-weight: bold; font-size: x-large">
+              REAL FOOD IS NOT MADE IN REASTAURANTS , ITS MADE AT HOME
+            </blockquote>
 
-  <div class="container" style="background-color:antiquewhite;">
-      <div class="Meal-wrapper" style="padding: 0; background-color:antiquewhite;">
-          <div class="Meal-search" style="margin: 0;">
-             <h2><b><p style="font-size: 75px;font-family: Algerian;
-                color: sienna; padding-top: 3rem; padding-bottom: 2rem; text-decoration: underline;">FIND RECIPIES FOR YOUR MEALS</p></b>
+            <span style="font-weight: bold">- Shashwat tiwari</span>
+          </div>
+          <div class="Meal-search-box" style="border-radius: 2rem">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Enter an ingredient "
+              id="search-Input"
+              style="width: 500px"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="Meal-result" style="background: transparent">
+            <h2 id="mealListHeader" style="display: none" class="title">
+              Your search results:
             </h2>
-
-            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 1rem; background: transparent;">
-                <blockquote style="font-weight:bold; font-size: x-large;">REAL FOOD IS NOT MADE IN REASTAURANTS , ITS MADE AT HOME
-                </blockquote>
-    
-                <span style="font-weight:bold;">- Shashwat tiwari</span>
-            </div>
-           
-
-            <div class="Meal-search-box" style="border-radius: 2rem;">
-                <input type="text" class="search-control"
-                placeholder="Enter an ingredient " id="search-Input" style="width: 500px;" >
-                <button type="submit" class="search-btn btn" id="search-btn">
-                    <i class="fas fa-search"></i>
-                </button> 
-            </div>
-            <div class="Meal-result" style="background: transparent;">
-             <h2 id="mealListHeader" style="display: none;" class="title">Your search results:</h2>
-                <div id="meal" style="border-radius: 2rem;background: transparent;">
-                <!-- Meal-item -->
-                    <!-- <div class="Meal-item" style="border-radius: 2rem;overflow: hidden;box-shadow: 0 4p 21px -12px rgba(0, 0, 0, 0.79);">
-                        <div class="Meal-img" >
-                        <img src="food.jpg" alt="food" style="
-                        object-fit: cover;border-top-right-radius: 2rem;
-                        border-top-left-radius: 2rem;">
-                            <div class="Meal-name">
-                            <h3>Chowmien</h3>
-                            <a href="#" class="recipe-btn">Get Recipies</a>
-                            </div>
-                    
-                        </div>
-                    </div> -->
-                </div>    
-            </div>
-
-
-
-            <div class="Meal-details">
-                <!-- recipe close btn -->
-                <button type="button" class="btn recipe-close-button" id="recipe-close-button" >
-                    <i class="fas fa-times"></i>
-                </button>
-
-
-                <!-- meal content -->
-                <div class="Meal-details-content">
-                    <h2 class="recipe-title">meals name here</h2>
-                    <p class="recipe-category">category name</p>
-                    <div class="recipe-instructions">
-                        <h3>Instructions</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex totam repellat harum voluptatibus cum rem veniam ea molestias laborum.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod deserunt tenetur quasi ducimus ipsa sed iste odit molestiae commodi quas.</p>
-                    </div>
-                    <div class="recipe-Meal-img">
-                        <img src="food.jpg" alt="" >
-                    </div>
-                    <div class="recipe-link">
-                        <a href="#" target="_blank">fjx</a>
-                    </div>
+          </div>
+          <div
+            id="meal"
+            style="border-radius: 2rem; background: transparent"
+          ></div>
+          <div class="Meal-details">
+            <!-- recipe close btn -->
+            <button
+              type="button"
+              class="btn recipe-close-button"
+              id="recipe-close-button"
+              style="display: none; position: fixed"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- meal content -->
+          <div
+            id="meal-details-content"
+            style="
+              position: fixed;
+              top: 50px;
+              margin-bottom: 250px;
+              margin-top: 280px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: bisque;
+              background: slategrey;
+              border-radius: 1rem;
+              width: 90%;
+              height: 90%;
+              overflow-y: scroll;
+              display: none;
+              padding: 2rem 0;
+            "
+          >
+            <!-- <h2 class="recipe-title">meals name here</h2>
+                <p class="recipe-category">category name</p>
+                <div class="recipe-instructions">
+                    <h3>Instructions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex totam repellat harum voluptatibus cum rem veniam ea molestias laborum.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod deserunt tenetur quasi ducimus ipsa sed iste odit molestiae commodi quas.</p>
                 </div>
-            </div>
+                <div class="recipe-Meal-img">
+                    <img src="food.jpg" alt="" >
+                </div>
+                <div class="recipe-link">
+                    <a href="#" target="_blank">fjx</a> -->
+          </div>
         </div>
       </div>
-  </div>
-
-
-  <script src="script.js"></script>
-</body>    
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
-
