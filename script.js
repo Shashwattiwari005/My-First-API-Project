@@ -70,36 +70,75 @@ function mealRecipeModal(meal) {
   console.log(meal);
   meal = meal[0];
   let html = `
-    <h2 class="recipe-title" style="padding-top: 2rem;
-    padding-top: 0rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-    text-decoration: underline;
-    font-size: xxx-large;">${meal.strMeal}</h2>
-    <p class="recipe-category">${meal.strCategory}</p>
-    <div class="recipe-instructions">
-        <h3 style="text-decoration: underline;">Instructions</h3>
-        <p style="margin-right: 100px;
-        margin-left: 100px;
-        text-align: justify;">${meal.strInstructions}</p>
-    </div>
-    <div class="recipe-Meal-img">
-        <img src="${meal.strMealThumb}" alt="" >
-    </div>
-    <div class="recipe-link">
-        <a href="${meal.strYoutube}" target="_blank" style="    background: #fff;
-        font-weight: 600;
-        color: var(--tenne-twany);
-        display: inline-block;
-        padding: 0.2rem 0.5rem;
-        border-radius: 0.4rem;
-        text-decoration: none;">Youtube</a>
-    </div>
+    <div>  
+      <div style="display: flex; justify-content: center;">
+        <div class="row">  
+          <div class="column.side">
+          <h2 class="recipe-title" style="padding-top: 2rem;
+          padding-top: 0rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          padding-bottom: 0.5rem;
+          text-decoration: underline;
+          font-size: xxx-large; 
+          margin-right: 7rem;
+          margin-top: 4rem;
+          font-family: Algerian;">${meal.strMeal}
+          </h2>
+          </div>
+          <div class="column.side">
+          <h2 class="recipe-category" style="
+          text-align: center;
+          justify-content: center;
+          margin-right: 17rem;
+          margin-left: 11rem;
+          margin-top: 4rem;">${meal.strCategory}</h2>
+          </div>
+        </div>  
+        <div class="column.middle">
+          <div class="recipe-Meal-img">
+          <img src="${meal.strMealThumb}" style="margin-top: 1rem;">
+          </div>
+        </div>
+      </div>
+      <div>  
+        <div style="display:block;">  
+          <div class="recipe-instructions">
+          <h3 style="
+          text-decoration: underline;
+          font-family: Algerian;
+          font-size: xx-large;">Instructions
+          </h3>
+            <p style="margin-right: 100px;
+            margin-left: 100px;
+            text-align: justify;">${meal.strInstructions}
+            </p>
+          </div>    
+        </div>
+        <div class="recipe-link">
+        <p style="
+        font-size: x-large;
+        margin-bottom: 2rem;
+        color: darkturquoise;
+        font-weight: bold;">
+        For The Full Tutorial video click the link below ⇓
+        </p>
+          <a href="${meal.strYoutube}" target="_blank" style="    background: #fff;
+          font-weight: 600;
+          color: var(--tenne-twany);
+          display: inline-block;
+          padding: 0.2rem 0.5rem;
+          border-radius: 0.4rem;
+          text-decoration: none;
+          font-size: xx-large;
+          margin-bottom: 3rem;">Youtube</a>
+        </div>
+      </div>
+    </div>      
     `;
   mealDetailsContent.innerHTML = html;
   mealDetailsContent.parentElement.classList.add("showRecipe");
-  document.getElementById("meal-details-content").style.display = "block";
+  document.getElementById("meal-details-content").style.display = "flex";
   document.getElementById("recipe-close-button").style.display = "flex";
   //   document.getElementById.style.
 }
