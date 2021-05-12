@@ -151,7 +151,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.9;
+  opacity: 2;
+  z-index: 999;
 }
 .recipe-title {
   letter-spacing: 1px;
