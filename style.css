@@ -204,6 +204,26 @@ body {
   justify-content: center;
 }
 
+.recipe-title {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+  font-size: xxx-large;
+  margin-right: 7rem;
+  font-family: Algerian;
+  justify-content: center;
+}
+
+.recipe-category {
+  text-align: center;
+  justify-content: center;
+  margin-right: 17rem;
+  margin-left: 11rem;
+  margin-top: 4rem;
+}
+
 /* Media queries*/
 
 @media screen and (min-width: 600px) {
@@ -226,33 +246,27 @@ body {
   }
 }
 
-/* Create three unequal columns that floats next to each other
-.column {
-  float: left;
-  padding: 10px;
-}
-
-/* Left and right column */
-/* .column.side {
-  width: 25%;
-} */
-
-/* Middle column */
-/* .column.middle {
-  width: 50%;
-} */
-
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-  .column.side,
-  .column.middle {
-    width: 100%;
+/* TO change layout when the page is shorten */
+@media screen and (max-width: 1000px) {
+  .top_contents {
+    display: flex;
+    flex-direction: column;
   }
-} */
+  .recipe-title {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    padding: 0px;
+    justify-content: center;
+  }
+  .recipe-Meal-img img {
+    justify-content: center;
+    padding: 0px;
+  }
+  .recipe-category {
+    justify-content: center;
+    margin-top: 1px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

@@ -71,28 +71,17 @@ function mealRecipeModal(meal) {
   meal = meal[0];
   let html = `
     <div>  
-      <div style="display: flex; justify-content: center;">
+      <div class="top_contents" style="display: flex; justify-content: center;">
         <div class="row">  
-          <div class="column.side">
-          <h2 class="recipe-title" style="padding-top: 2rem;
-          padding-top: 0rem;
-          padding-left: 2rem;
-          padding-right: 2rem;
-          padding-bottom: 0.5rem;
-          text-decoration: underline;
-          font-size: xxx-large; 
-          margin-right: 7rem;
-          margin-top: 4rem;
-          font-family: Algerian;">${meal.strMeal}
+          <div class="column.side1">
+          <h2 class="recipe-title">${meal.strMeal}
           </h2>
           </div>
-          <div class="column.side">
-          <h2 class="recipe-category" style="
-          text-align: center;
-          justify-content: center;
-          margin-right: 17rem;
-          margin-left: 11rem;
-          margin-top: 4rem;">${meal.strCategory}</h2>
+          <div class="column.side2" style="
+          width: fit-content;
+          margin-right: auto;
+          margin-left: auto;">
+          <h2 class="recipe-category" >${meal.strCategory}</h2>
           </div>
         </div>  
         <div class="column.middle">
