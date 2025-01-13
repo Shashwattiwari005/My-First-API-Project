@@ -71,7 +71,7 @@ function mealRecipeModal(meal) {
   meal = meal[0];
   let html = `
     <div>  
-      <div class="top_contents" style="display: flex; justify-content: center;">
+      <div class="top_contents" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
         <div class="row">  
           <div class="column.side1">
           <h2 class="recipe-title">${meal.strMeal}
