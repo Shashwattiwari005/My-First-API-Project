@@ -132,10 +132,13 @@ body {
 }
 
 .Meal-details-content {
-  margin: 2rem;
+  margin: 1px;
+  padding: 1px;
+  position:sticky;
+  margin-top: 10px;
 }
 .Meal-details-content p:not(.recipe-category) {
-  padding: 1rem;
+  padding: 1px;
 }
 
 .recipe-close-button {
