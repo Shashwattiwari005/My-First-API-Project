@@ -1,131 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: antiquewhite">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>FIND MEALS</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find delicious meal recipes based on ingredients">
+    <title>Recipe Finder - Your Culinary Companion</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">Recipe Finder</h1>
+            <p class="tagline">Discover delicious meals you can make at home</p>
+        </header>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container" style="background-color: antiquewhite">
-      <div
-        class="Meal-wrapper"
-        style="padding: 0; background-color: antiquewhite"
-      >
-        <div class="Meal-search" style="margin: 0">
-          <h2>
-            <b
-              ><p
-                style="
-                  font-size: 75px;
-                  font-family: Algerian;
-                  color: sienna;
-                  padding-top: 3rem;
-                  padding-bottom: 2rem;
-                  text-decoration: underline;
-                "
-              >
-                FIND RECIPIES FOR YOUR MEALS
-              </p></b
-            >
-          </h2>
-
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              margin-top: 1rem;
-              background: transparent;
-              padding-top: 50px;
-            "
-          >
-            <blockquote style="font-weight: bold; font-size: x-large">
-              ℝ𝔼𝔸𝕃 𝔽𝕆𝕆𝔻 𝕀𝕊 ℕ𝕆𝕋 𝕄𝔸𝔻𝔼 𝕀ℕ ℝ𝔼𝕊𝕋𝔸𝕌ℝ𝔸ℕ𝕋𝕊, 𝕀𝕋𝕊 𝕄𝔸𝔻𝔼 𝔸𝕋 ℍ𝕆𝕄𝔼
-            </blockquote>
-
-            <span style="font-weight: bold; font-size: x-large"
-              >- 𝕊𝕙𝕒𝕤𝕙𝕨𝕒𝕥 𝕋𝕚𝕨𝕒𝕣𝕚</span
-            >
-          </div>
-          <div
-            class="Meal-search-box"
-            style="border-radius: 2rem; padding-top: 75px"
-          >
-            <input
-              type="text"
-              class="search-control"
-              placeholder="Enter an ingredient "
-              id="search-Input"
-              style="width: 500px"
-            />
-            <button type="submit" class="search-btn btn" id="search-btn">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-          <div class="Meal-result" style="background: transparent">
-            <h2 id="mealListHeader" style="display: none" class="title">
-              Your search results:
-            </h2>
-          </div>
-          <div
-            id="meal"
-            style="border-radius: 2rem; background: transparent"
-          ></div>
-          <div class="Meal-details">
-            <!-- recipe close btn -->
-            <button
-              type="button"
-              class="btn recipe-close-button"
-              id="recipe-close-button"
-              style="display: none; position: fixed"
-            >
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <!-- meal content -->
-          <div
-            id="meal-details-content"
-            style="
-              position: fixed;
-              top: 50px;
-              margin-bottom: 260px;
-              margin-top: 400px;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              color: bisque;
-              background: slategrey;
-              border-radius: 1rem;
-              width: 80%;
-              height: 90%;
-              display: none;
-              padding: 2rem 0;
-            "
-          >
-            <!-- <h2 class="recipe-title">meals name here</h2>
-                <p class="recipe-category">category name</p>
-                <div class="recipe-instructions">
-                    <h3>Instructions</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex totam repellat harum voluptatibus cum rem veniam ea molestias laborum.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod deserunt tenetur quasi ducimus ipsa sed iste odit molestiae commodi quas.</p>
+        <main class="meal-wrapper">
+            <section class="meal-search">
+                <div class="search-container">
+                    <div class="meal-search-box">
+                        <input 
+                            type="text" 
+                            class="search-control" 
+                            placeholder="Enter an ingredient" 
+                            id="search-Input"
+                            aria-label="Search for recipes">
+                        <button type="submit" class="search-btn btn" id="search-btn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="recipe-Meal-img">
-                    <img src="food.jpg" alt="" >
-                </div>
-                <div class="recipe-link">
-                    <a href="#" target="_blank">fjx</a> -->
-          </div>
-        </div>
-      </div>
+            </section>
+
+            <section class="meal-result">
+                <h2 id="mealListHeader" class="title">Search Results</h2>
+                <div id="meal" class="meal-grid"></div>
+            </section>
+
+            <div class="meal-details">
+                <button type="button" class="btn recipe-close-button" id="recipe-close-button" aria-label="Close recipe">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div id="meal-details-content" class="meal-details-content"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Recipe Finder. Powered by <a href="https://www.themealdb.com/api.php" target="_blank" rel="noopener">TheMealDB</a></p>
+        </footer>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
